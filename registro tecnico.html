@@ -1,0 +1,58 @@
+<?php
+  require"conexióntec.php";
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/SME.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+  <title>Formulario de registro Técnico</title>
+</head>
+
+<body>
+  <header>
+    <div id="contenedor1">
+      <nav>
+
+        <a class="inicio-logo" href="index.html" alt="LOGO">
+          <img src="img/SME.png" alt="Logo" width="30px">
+        </a>
+        <a href="index.html">SME Inicio</a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="login Tecnicos.html">Login Tecnico</a>
+        <a href="login Clientes.html">Login Cliente</a>
+        <a href="sugerencias.html">Sugerencias</a>
+        <a href="#" id="login"></a>
+      </nav>
+      <div class="opacity">
+        <form class="formulario-inicio_tecnico">
+          <h4>Registro</h4>
+
+          <input class="controls" type="text" name=nombre id="nombre"
+          placeholder="nombre">
+          <input class="controls" type="text" name="apellido" id="apellido" placeholder="apellido">
+          <input class="controls" type="text" name="dirección" id="dirección" placeholder="dirección">
+          <input class="controls" type="email" name=correo id="correo"
+          placeholder="correo electronico">
+          <input class="controls" type="tel" name="celular" id="celular"
+          placeholder="celular">
+          <input class="controls" type="text" name="usuario" id="usuario"
+          placeholder="nombre de usuario">
+          <input class="controls" type="text" name="contraseña" id="contraseña"
+          placeholder="contraseña">
+         <!-- Campo de selección de archivo -->
+        <input class="controls" type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+          <p><input type="checkbox"> Acepto terminos y condiciones </p>
+          <p class="botons"><a href="registro_servicios_tecnico.html">Enviar</a></p>
+      </div>
+  </header>
+  <footer>
+
+  </footer>
+</body>
+</html>
